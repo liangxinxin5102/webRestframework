@@ -1,0 +1,4 @@
+cd /home
+mkdir demo12_uwsgi #创建一个目录，专门存放uwsgi的相关文件
+cd demo12_uwsgi/
+vim demo12.ini #创建一个ini文件

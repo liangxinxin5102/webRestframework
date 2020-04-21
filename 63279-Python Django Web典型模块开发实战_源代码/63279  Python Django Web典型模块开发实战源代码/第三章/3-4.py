@@ -1,0 +1,1 @@
+pip install Djangorestframework markdown Django-filter pillow Django-guardian coreapi

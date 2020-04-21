@@ -1,0 +1,6 @@
+this.$http.jsonp('http://www.domain2.com:8080/login', {
+    params: {},
+    jsonp: 'onBack'
+}).then((res) => {
+    console.log(res); 
+})

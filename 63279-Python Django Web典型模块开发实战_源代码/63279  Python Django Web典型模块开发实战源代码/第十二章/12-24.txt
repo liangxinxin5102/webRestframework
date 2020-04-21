@@ -1,0 +1,5 @@
+apt-get install mysql-server
+y
+apt-get install mysql-client
+apt-get install libmysqlclient-dev
+y

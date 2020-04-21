@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for t in list %}
+    <div>
+    <a href="/book/{{ t.id }}/">
+         È√˚£∫°∂{{ t.title }}°∑
+        </a>
+    </div>
+    <div>
+        ‰Ø¿¿¡ø£∫{{ t.pv }}
+    </div>
+{% endfor %}
+</body>
+</html>

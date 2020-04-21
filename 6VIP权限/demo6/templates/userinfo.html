@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>用户</h4>
+<ul>
+   {% for user in u_queryset %}
+    <li>{{ user.name }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

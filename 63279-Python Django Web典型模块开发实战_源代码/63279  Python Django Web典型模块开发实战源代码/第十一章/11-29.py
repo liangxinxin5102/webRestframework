@@ -1,0 +1,1 @@
+@cache_response(timeout=60*60, cache='default')

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{#    引入静态文件#}
+    {% load staticfiles %}
+    <style>
+        .good{
+            width: 200px;
+            margin: 0 auto;
+            background-color: bisque;
+        }
+        .good img{
+            width: 200px;
+            height: 200px;
+        }
+        .num{
+            width: 100px;
+        }
+        .btn{
+            width: 100px;
+            height: 30px;
+            margin-left: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="good">
+    <img src="{% static '/img/01.png' %}">
+    <div >用户名：{{ user.username }} </div>
+    <div>商品名：你的背包</div>
+    <form action="/shop/" method="post">
+        {% csrf_token %}
+        <div>
+            数量：
+<input class="num" type="number" name="num">个
+        </div>
+        <div>
+            <input class="btn" type="submit" value="立即付款购买">
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<template>
+  <div id="app">
+    <div class="all">
+      <div class="one">
+        <div class="onetype" v-for="(item,index) in one" :key="index">
+          <b>{{one[index].name}}</b>
+        </div>
+      </div>
+      <div class="twothreefour">
+        <div class="two">
+          <div class="twotype" 
+          v-for="(item,index) in two" :key="index"
+           @mouseenter="open(index)">
+            <b>{{two[index].name}}</b>
+          </div>
+        </div>
+        <div class="threefour" v-if="flag"
+           @mouseleave="close()">
+          <div class="threefourtype" v-for="(item,index) in three1" :key="index">
+            <span class="three">{{three1[index]}}</span>
+            <span class="four" v-for="(item4,index4) in four1" :key="index4">
+{{four1[index4]}}&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,10 @@
+#退出虚拟环境
+deactivate
+cd ..
+apt install python3-pip
+y
+pip3 install uwsgi
+#使用uwsgi启动项目
+uwsgi --chdir /home/demo12a --home /home/env36 --http :8000 --module demo12a.wsgi
+#/home/demo12a 代表项目路径
+#/home/env36 代表虚拟环境路径

@@ -1,0 +1,10 @@
+#安装虚拟环境
+apt-get install python3-venv
+y
+#在当前目录下，创建一个python3.6的虚拟环境，取名为env36
+python3 -m venv env36
+. env36/bin/activate
+#进入虚拟环境
+#退出虚拟环境 deactivate
+cd demo12a
+pip3 install -r requirements.txt
